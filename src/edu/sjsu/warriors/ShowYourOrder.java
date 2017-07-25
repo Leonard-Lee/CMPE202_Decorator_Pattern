@@ -22,18 +22,23 @@ public class ShowYourOrder {
 
         // Your Own Burger
         Burger yourOwnBurger = new YourOwnBurger();
+        // Step 1. Choose a Burger
         // meat name: Beef, Chicken, Turkey, Veggie
         // lb: 1/3lb, 2/3lb, 1lb
         yourOwnBurger = new Meat(yourOwnBurger, "Beef", "1/3lb");
         yourOwnBurger = new Bun(yourOwnBurger);
+        // Step 2. Choose a Cheese
         yourOwnBurger = new Cheese(yourOwnBurger, new String[]{"Danish Blue Cheese", "Horseradish Cheddar"});
+        // Step 3. Choose up to 4 Toppings
         yourOwnBurger = new Topping(yourOwnBurger, new String[]{
            "Bermuda Red Onion", "Black Olives",
                 "Carrot Strings", "Coleslaw"
         });
+        // Step 4. Premium Toppings
         yourOwnBurger = new PremiumTopping(yourOwnBurger, new String[]{
                 "Applewood Smoked Bacon"
         });
+        // Step 5. Choose a Sauce
         yourOwnBurger = new Sauce(yourOwnBurger, new String[]{
                 "Apricot Sauce"
         });
